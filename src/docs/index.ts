@@ -17,8 +17,8 @@ const swaggerDefinition: OAS3Definition = {
       },
     },
     schemas: {
-      ...userSchema,
-      ...authSchema,
+      user: userSchema,
+      auth: authSchema,
     },
   },
 };

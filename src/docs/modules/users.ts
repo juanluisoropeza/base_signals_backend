@@ -1,5 +1,5 @@
 const userSchema = {
-  user: {
+  User: {
     type: 'object',
     required: ['name', 'lastname', 'email', 'phone', 'role', 'gender'],
     properties: {

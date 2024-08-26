@@ -1,5 +1,5 @@
 const authSchema = {
-  auth: {
+  Auth: {
     type: 'object',
     required: ['email', 'password'],
     properties: {
