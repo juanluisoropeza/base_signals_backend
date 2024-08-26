@@ -7,7 +7,7 @@
     "lint": "eslint \"**/*.{js,ts,tsx,jsx}\" --quiet --fix",
     "prepare": "husky install",
     "build": "tsc -p tsconfig.prod.json",
-    "start": "cross-env NODE_ENV=production && node -r tsconfig-paths/register -r ts-node/register/transpile-only dist/app.js",
+    "start": "cross-env NODE_ENV=production --omit=dev && node -r tsconfig-paths/register -r ts-node/register/transpile-only dist/app.js",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage"
